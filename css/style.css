@@ -3,6 +3,11 @@ body {
   font-family: 'McLaren', cursive;
 }
 
+#page{
+  margin-top: 25vh;
+  margin-bottom: 25vh%;
+}
+
 h1 {
   font-size: 3em;
 }
