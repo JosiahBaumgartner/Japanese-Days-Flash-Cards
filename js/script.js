@@ -12,7 +12,7 @@ const days = [
 
 function eval(){
   event.preventDefault();
-  if(document.querySelector("#input").value.toLowerCase() === days[randomNum].english) {
+  if(document.querySelector("#input").value.toLowerCase() === days[randomNum].english || document.querySelector("#input").value.toLowerCase() === days[randomNum].english + " ") {
     document.querySelector("#day").textContent = "Correct!"
     document.querySelector("#day").classList.add("correct")
   } else {
