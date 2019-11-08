@@ -23,6 +23,7 @@ function eval(){
   randomNum = Math.floor(Math.random() * 7);;
   document.querySelector("#day").textContent = days[randomNum].japanese;
   document.querySelector("#day").classList.remove("correct", "incorrect");
+  document.querySelector("#input").value = "";
   }, 1000);
 }
 
