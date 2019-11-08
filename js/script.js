@@ -20,8 +20,9 @@ function eval(){
     document.querySelector("#day").classList.add("incorrect")
   }
   setTimeout(function(){
-  let randomNum = Math.floor(Math.random() * 7);;
+  randomNum = Math.floor(Math.random() * 7);;
   document.querySelector("#day").textContent = days[randomNum].japanese;
+  document.querySelector("#day").classList.remove("correct", "incorrect");
   }, 1000);
 }
 
