@@ -1,4 +1,4 @@
-let randomNum = Math.floor(Math.random() * 7)
+let randomNum = Math.floor(Math.random() * 7);
 
 const days = [
   {japanese:"にちようび", english:"sunday"},
@@ -19,7 +19,10 @@ function eval(){
     document.querySelector("#day").textContent = "Incorrect!"
     document.querySelector("#day").classList.add("incorrect")
   }
-  setTimeout(function(){location.reload();}, 1000);
+  setTimeout(function(){
+  let randomNum = Math.floor(Math.random() * 7);;
+  document.querySelector("#day").textContent = days[randomNum].japanese;
+  }, 1000);
 }
 
 document.querySelector("#day").textContent = days[randomNum].japanese;
